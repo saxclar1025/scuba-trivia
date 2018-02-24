@@ -10,6 +10,28 @@
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
+    <div>
+        <h1 class="col-xs-12 text-center">Scuba Trivia!</h1>
+        
+        <button id="start-button" class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5">Start Game</button>
 
+        <div id="game" class="hidden col-xs-12">
+            <h4 class="col-xs-12 text-center">Time Remaining: <span id="time-remaining">30</span> Seconds</h4>
+
+            <div id="question-block">
+                <h4 id="question" class="col-xs-12 text-center">Question</h4>
+                <h4 id="choice-a" class="col-xs-12 text-center choice">Choice A</h4>
+                <h4 id="choice-b" class="col-xs-12 text-center choice">Choice B</h4>
+                <h4 id="choice-c" class="col-xs-12 text-center choice">Choice C</h4>
+                <h4 id="choice-d" class="col-xs-12 text-center choice">Choice D</h4>
+            </div>
+
+            <div id="answer-block" class="hidden">
+                <h4 id="is-correct" class="col-xs-12 text-center">Correct!</h4>
+                <h6 class="col-xs-12 text-center">The Correct Answer was: <span id="correct-response">correct-answer</span></h6>
+                <img id="answer-image" src="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
