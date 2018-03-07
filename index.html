@@ -10,28 +10,37 @@
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
-    <div>
+    <header>
         <h1 class="col-xs-12 text-center">Scuba Trivia!</h1>
-        
-        <button id="start-button" class="col-xs-4 col-sm-2 col-xs-offset-4 col-sm-offset-5">Start Game</button>
+    </header>
 
-        <div id="game" class="hidden col-xs-12">
-            <h4 class="col-xs-12 text-center">Time Remaining: <span id="time-remaining">30</span> Seconds</h4>
+    <div id="game-div" class="col-xs-12 col-md-6 col-md-offset-3">
+        <button id="start-button" class="col-xs-4 col-xs-offset-4">Start Game</button>
 
-            <div id="question-block">
-                <h4 id="question" class="col-xs-12 text-center">Question</h4>
-                <h4 id="choice-a" class="col-xs-12 text-center choice">Choice A</h4>
-                <h4 id="choice-b" class="col-xs-12 text-center choice">Choice B</h4>
-                <h4 id="choice-c" class="col-xs-12 text-center choice">Choice C</h4>
-                <h4 id="choice-d" class="col-xs-12 text-center choice">Choice D</h4>
-            </div>
+        <div id="question-block" class="hidden">
+            <h4 class="col-xs-12 text-center">Time Remaining: <span id="time-remaining">#</span> Seconds</h4>
+            <h4 id="question" class="col-xs-12 text-center">Question</h4>
+            <h4 id="choice-a" value="0" class="col-xs-12 text-center choice">Choice A</h4>
+            <h4 id="choice-b" value="1" class="col-xs-12 text-center choice">Choice B</h4>
+            <h4 id="choice-c" value="2" class="col-xs-12 text-center choice">Choice C</h4>
+            <h4 id="choice-d" value="3" class="col-xs-12 text-center choice">Choice D</h4>
+        </div>
 
-            <div id="answer-block" class="hidden">
-                <h4 id="is-correct" class="col-xs-12 text-center">Correct!</h4>
-                <h6 class="col-xs-12 text-center">The Correct Answer was: <span id="correct-response">correct-answer</span></h6>
-                <img id="answer-image" src="">
-            </div>
+        <div id="answer-block" class="hidden">
+            <h4 id="question-answer" class="col-xs-12 text-center">Question</h4>
+            <h4 id="is-correct" class="col-xs-12 text-center">Correct!</h4>
+            <h6 class="col-xs-12 text-center">The Correct Answer was: <span id="correct-response">correct-answer</span></h6>
+            <img id="answer-image" class="col-xs-12" src="">
+        </div>
+
+        <div id="results-block" class="hidden">
+            <h4 class="col-xs-12 text-center">All done, here's how you did!</h4>
+            <h6 class="col-xs-12 text-center">Correct Answers: <span id="number-correct">#</span></h6>
+            <h6 class="col-xs-12 text-center">Inorrect Answers: <span id="number-incorrect">#</span></h6>
+            <h6 class="col-xs-12 text-center">Unanswered: <span id="number-unanswered">#</span></h6>
+            <button id="restart-button" class="col-xs-4 col-xs-offset-4">Start Over?</button>
         </div>
     </div>
+    <audio class="hidden" src=""></audio>
 </body>
 </html>

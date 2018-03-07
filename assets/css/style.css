@@ -1,0 +1,22 @@
+body{
+    background-image: url("../images/underwater-background.jpg");
+    background-size: cover;
+}
+
+header{
+    color: white;
+}
+
+#start-button, #restart-button{
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px white solid;
+    color: white;
+    font-size: 24px;
+}
+
+#game-div{
+    background-color: rgba(136, 204, 255, 0.8);
+    border-radius: 5px;
+    border: 2px blue solid;
+}
