@@ -108,7 +108,7 @@ $("document").ready(function(){
         ],
 
         checkAnswer: function(answerIndex) {
-            if (answerIndex === this.questions[this.questionIndex]) {
+            if (this.questions[this.questionIndex].isCorrect(answerIndex)) {
                 this.numberCorrect++;
             }
             else if (answerIndex === null) {
