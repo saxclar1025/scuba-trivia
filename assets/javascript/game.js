@@ -88,7 +88,7 @@ $("document").ready(function(){
         numberIncorrect: 0,
         numberSkipped: 0,
         questionTimeLimitSeconds: 30,
-        timeBetweenQuestionsSeconds: 2,
+        timeBetweenQuestionsSeconds: 6,
         questionIndex: 0,
         secondsLeft: this.questionTimeLimitSeconds,
 

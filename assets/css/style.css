@@ -7,7 +7,7 @@ header{
     color: white;
 }
 
-#start-button, #restart-button{
+#start-button, #restart-button, .choice:hover{
     background-color: blue;
     border-radius: 5px;
     border: 2px white solid;
